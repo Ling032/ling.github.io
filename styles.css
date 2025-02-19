@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000; /* Black background */
+    color: #fff;      /* White text */
+    font-family: 'Creepster', sans-serif; /* Spooky font */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+  /* Titles and Headings */
+  .title {
+    font-size: 3em;
+    color: #ff0000; /* Red text for extra creepiness */
+    text-shadow: 2px 2px 8px #000;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.5em;
+    color: #ccc;
+    margin-bottom: 30px;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Flickering Text */
+  .flicker {
+    font-size: 2em;
+    color: #ff0000;
+    margin: 50px 0;
+    animation: flicker 1.5s infinite alternate;
+  }
+  
+  @keyframes flicker {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+  
+  /* Gallery Styles */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .img-container {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    border: 2px solid #fff;
+    transition: transform 0.4s;
+  }
+  
+  .img-container:hover {
+    transform: scale(1.1);
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(50%);
+    transition: filter 0.4s;
+  }
+  
+  .img-container:hover img {
+    filter: grayscale(0%) brightness(70%);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #999;
+    font-size: 0.9em;
+    background-color: #111;
+    margin-top: 40px;
+  }
+  
